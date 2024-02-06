@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Guest\ComicController as GuestComicController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,7 @@ Route::get('/', function () {
     $comics = config('db.comics');
     return view('pages.comics', ['comics' => $comics]);
 });
+
 
 
 
