@@ -1,0 +1,72 @@
+footer {
+    background-image: url(/resources/imgs/footer-bg.jpg);
+    background-size: cover;
+}
+
+.up-footer-container {
+    padding: 0rem 16rem 0rem;
+}
+
+.up-footer-container div:nth-child(1) p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.up-footer-container div:nth-child(1) ul {
+    list-style-type: none;
+    margin-right: 1rem;
+    padding-left: 0;
+}
+
+.up-footer-container .dc-comics {
+    margin-bottom: 1rem;
+}
+
+.up-footer-container li {
+    color: #cccccc;
+    padding: 0.1rem;
+    font-size: 0.6rem;
+}
+
+.up-footer-container div:nth-child(2) img {
+    height: 25rem;
+    object-fit: none;
+    width: 141%;
+    position: relative;
+    right: 13rem;
+}
+
+.down-footer-container {
+    padding: 1.5rem 16rem 1.5rem;
+    background-color: rgb(48, 48, 48);
+}
+
+.down-footer-container div:nth-child(1) button {
+    background-color: transparent;
+    border: 2px solid rgb(2, 130, 249);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.down-footer-container div:nth-child(2) img {
+    padding: 0.5rem;
+    height: 2.7rem;
+    object-fit: contain;
+}
+
+.down-footer-container div:nth-child(2) button {
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+    color: rgb(2, 130, 249);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
