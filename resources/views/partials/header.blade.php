@@ -12,7 +12,7 @@
                     Characters
                 </li>
                 <li>
-                    Comics
+                    <a href="{{route('comics.index')}}">Comics</a>
                 </li>
                 <li>
                     Movies
