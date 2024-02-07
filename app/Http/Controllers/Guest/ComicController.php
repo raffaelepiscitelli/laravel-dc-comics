@@ -30,7 +30,12 @@ class ComicController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
+
     {
+        $request->validate([
+            'price'=>['required', ]
+        ]);
+
         $newComicData = $request->all();
         $newComic = new Comic();
             $newComic-> title=$newComicData['title'];
@@ -65,9 +70,13 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Comic $comic)
     {
-        dd($request->all(), $id);
+        $data = $request->all();
+
+        $comic->update($data);
+
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**
