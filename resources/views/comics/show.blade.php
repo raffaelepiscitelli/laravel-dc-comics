@@ -21,7 +21,7 @@
                             Price: {{ $comic->price }}
                         </p>
                         <p>
-                            Series: {{ $comic->series }}mq
+                            Series: {{ $comic->series }}
                         </p>
                         <p>
                             Sale date: {{ $comic->sale_date }}
@@ -29,6 +29,7 @@
                         <p>
                             Type: {{ $comic->type }}
                         </p>
+                        <a href="{{route('comics.edit', $comic->id)}}"><button class="btn btn-primary">Edit this comic book</button></a>
                     </div>
                 </div>
             </div>
